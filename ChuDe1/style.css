@@ -1,0 +1,468 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+
+:root {
+    --color-main: #ff3366;
+  }
+
+#header .nav-icon{
+   display: none;
+   float: right;
+}
+
+
+
+#header .navbar{
+
+    width: 100%;
+    height: 90px;
+    padding: 16px 100px;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 1;
+    box-shadow: 0 0 2px rgba(0,0,0,0.3);
+   
+}
+
+
+#header .logo{
+    float: left;
+    width: 35%;
+}
+
+#header .nav{
+    float: left;
+    width: 65%;
+    text-align: right;
+    height: 100%;
+}
+
+.nav a{
+    text-decoration: none;
+    height: 100%;
+}
+
+.nav ul{
+    display: inline-flex;
+    list-style: none;
+    height: 100%;
+}
+
+.nav li{
+    text-decoration: none;
+    padding: 0px 16px;
+    line-height: 75px;
+    color: var(--color-main);
+    font-size: 18px;
+}
+
+.nav li:hover,
+.search-button:hover{
+    opacity: 0.7;
+}
+
+
+
+#header .search{
+    margin-top: 75px;
+    height: 300px;
+    background-image: url(./images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.search-input{
+    width: 40%;
+    height: 32px;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*căn giữa( 3 dòng)*/
+
+}
+
+.search input{
+    border: none;
+    border-radius: 4px;
+    padding: 8px 6px;
+}
+
+.search input[type="text"]{
+    font-size: 20px;
+    width: 80%;
+    margin-bottom: 4px;
+
+}
+
+.search-button{
+    background-color: var(--color-main);
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+    
+#container{
+    
+}
+
+.main{
+   margin: 0 160px;
+   padding: 75px 0;
+    text-align: center;
+}
+
+.main h2{
+    margin-bottom: 48px;
+}
+
+.row-menu .menu-img{
+    padding: 0 12px;
+    float: left;
+    width: calc(100%/3);
+    position: relative;
+}
+
+.categories .row-menu{
+    padding: 12px 0;
+}
+
+.menu-img img{
+    width: 100%;
+    border-radius: 16px;
+}
+
+.menu-img .title{
+    position: absolute;
+    width: 100%;
+    bottom: 48px;
+    color: #fff;
+    font-size: 24px;
+   
+}
+
+#c-food{
+    background-color: #ddddddda;
+    
+}
+
+.row-food{
+    margin: 24px -48px;
+}
+
+.row-food .food-infor{
+    width: 48%;
+    float: left;
+    background-color: #fff;
+    padding: 32px 0;
+    border-radius: 20px;
+    margin: 0 9px;
+}
+
+.food-infor.left{
+    float: left;
+}
+
+.food-infor.right{
+    float: right;
+}
+
+
+.food-img{
+    float: left;
+    width: 30%;
+    padding: 0 32px;
+ 
+}
+
+.food-img img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.description{
+    float: left;
+    text-align: left;
+    width: 60%;
+    font-size: 15px;
+}
+
+
+
+.description .price{
+    line-height: 2;
+    /*font-weight: bold;*/
+}
+
+.description .text{
+    opacity: 0.8;
+    line-height: 1.3;
+}
+
+.description .order-button{
+    margin-top: 16px;
+}
+
+.order-button:hover{
+    opacity: 0.8;
+}
+
+.order-button a{
+    color: #fff;
+    text-decoration: none;
+    background-color: var(--color-main);
+    border-radius: 4px;
+    padding: 4px 2px;
+}
+
+.all-food{
+    text-decoration: none;
+    color: var(--color-main);
+}
+
+#footer{
+    text-align: center;
+    padding-bottom: 24px;
+    /*position: fixed;
+    bottom: 0;
+    z-index: 1;*/ /* bám dính*/
+    background-color: #fff;
+    width: 100%;
+}
+
+#footer div{
+    display: inline-block;
+    padding: 24px 16px;
+}
+
+#footer span a{
+    text-decoration: none;
+    color: var(--color-main);
+}
+
+#footer img{
+    cursor: pointer;
+}
+
+#footer img:hover{
+    opacity: 0.6;
+}
+/*End 1st Page*/
+
+/*2nd Page*/
+
+#form-oder{
+    margin-top: 90px;
+    text-align: center;
+    background-image: url(./images/bg_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#form-oder .form-content{
+    padding: 100px 0;
+    
+}
+
+#form-oder .border-form{
+    margin: 48px calc(100%/3);
+    border: 1px #fff solid;
+    border-radius: 4px;
+    padding: 24px 16px;
+    text-align: left;
+}
+
+#form-oder h1{
+    color: #fff;
+    font-weight: 500;  
+}
+
+.border-form input:not(#order-btt){
+    width: 100%;
+    padding: 4px 2px;
+    border-radius: 4px;
+    border: none;
+    margin-top: 4px;
+}
+
+.select-food .food-img{
+    padding: 0 32px 0 0;
+}
+
+.form-content .delivery-details input{
+    margin-bottom: 16px;
+}
+
+.delivery-details input[type="button"]{
+    background-color: var(--color-main);
+    color: #fff;
+    padding: 4px 2px;
+    border-radius: 4px;
+    border: none;
+    margin: 4px 0 0 0;
+}
+
+.delivery-details .Email{
+    height: 200px;
+}
+
+.delivery-details textarea{
+    width: 100%;
+    border-radius: 4px;
+    border: none;
+    margin-top: 4px;
+}
+
+/*End 2nd Page*/
+
+/*3rd Page*/
+#content-categories{
+    margin-top: 75px;
+}
+/*end 3rd Page*/
+
+/*4th Page*/
+#c-food4 .last{
+    padding-top: 75px;
+    margin-top: 75px;
+
+}
+
+#c-food4{
+    background-color: #ddddddda;
+}
+
+/*Reponsive*/
+@media only screen and (max-width: 1160px){
+    .row-food .food-infor{
+        width: 100%;
+        float: left;
+        margin-bottom: 24px;
+    }
+
+    .order-img{
+        width: 40%;
+        padding: 0 24px;
+    }
+
+ 
+}
+
+@media only screen and (max-width: 800px){
+    /*nav-icon display*/
+    #header .navbar{
+        padding: 16px 0;
+    }
+
+    #header .nav{
+        display: none;
+    }
+
+    #header .nav-icon{
+        display: block;
+        width: 64px;
+        line-height: 75px;
+        font-size: 32px;
+        position: relative;
+    }
+
+    .nav-icon i{
+        color: var(--color-main);
+        cursor: pointer;
+
+    }
+
+    .nav-none{
+        display: none;
+        background-color: #fff;
+        
+    }
+
+    .nav-none ul{
+        list-style: none;
+    }
+
+    .nav-none a{
+        text-decoration: none;
+        color:var(--color-main);
+        font-size: 16px;
+        line-height: 32px;
+
+    }
+
+    .nav-none ul li:hover{
+        opacity: 0.6;
+    }
+
+    .nav-icon:hover .nav-none{
+        display: block;
+        position: absolute;
+        right: 32px;
+        box-shadow: 0 0 2px rgba(0,0,0,0.3);
+        width: 130px;
+        padding: 4px;
+        
+    }
+
+    /*Ex*/
+    .row-menu .menu-img{
+        width: 100%;
+
+    }
+
+  
+
+    .main{
+        margin: 0 calc(100%/6);
+    }
+
+    /*Search*/
+    .search input[type="text"]{
+        width: 100%;
+    }
+
+    .search-button{
+        float: right;
+    }
+
+    #header .search{
+        height: 200px;
+    }
+
+    /*order*/
+    .order .food-img{
+        width: 100%;
+    }
+
+    .order .description{
+        width: 100%;
+    }
+
+    
+    
+
+    
+
+    
+
+}
+
+
+
+
+
+
+
+
+
